@@ -1,38 +1,62 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background: #846A6A;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+.header {
+  height: 4rem;
+  border-bottom: 2px solid #EEF0F2;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 0 1rem;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.3);
+}
+.logo {
+  background: url("noun-chating-4530474.png");
+  height: 3.5rem;
+  width: 3.5rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  border: 3px solid #353B3C;
+}
+.title {
+  font-size: 2rem;
+  margin-left: 1rem;
+  color: #EEF0F2;
+  font-weight: bold;
+}
+.footer {
+  height: 8rem;
+  width: 100%;
+  border-top: 2px solid #EEF0F2;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  background: rgba(255, 255, 255, 0.3);
+  position: relative;
+}
+.text-input {
+  width: 100%;
+  border: 1px solid #EEF0F2;
+  height: 2rem;
+  border-radius: 1rem;
+  padding: 0 1rem;
+  background: #353B3C;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.send {
+  background: #EEF0F2;
+  border-radius: 15%;
+  border: none;
+  height: 1.7rem;
+  width: 5rem;
+  position: absolute;
+  margin-top: .1rem;
+  right: .5rem;
+  cursor: pointer;
 }
