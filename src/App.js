@@ -1,14 +1,12 @@
 import { useState } from 'react';
 import './App.css';
 import TextInput from "./TextInput";
-import Message from "./Message";
 
 function App() {
   const [text, setText] = useState([]);
-  function sendMsg(text){
-    const msg = {
-      text, time: Date.now(), user: "Evan",};
-      setText([msg, ...text])
+  function sendMsg(msg){
+    console.log(msg)
+    setText([msg, ...text])
     }
   console.log(text);
   return (
@@ -19,8 +17,8 @@ function App() {
       </header>
       <footer>
         <div className="text"> 
-          {text.map((message) => {
-            return <Message {...message} />;
+          {text.map((msg) => {
+            return <div className="message">{msg}</div>;
           })}
           </div>
           <TextInput sendMessage={sendMsg} />

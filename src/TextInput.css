@@ -1,7 +1,7 @@
 .footer {
     height: 4rem;
     width: 100%;
-    border-top: 2px solid white;
+    border-top: 2px solid #EEF0F2;
     display: flex;
     align-items: center;
     padding: 0 1rem;
@@ -10,23 +10,22 @@
   }
   .input {
     width: 100%;
-    border: 1px solid white;
+    border: 1px solid #EEF0F2;
     height: 2rem;
-    border-radius: 1rem;
+    border-radius: 2rem;
     padding: 0 1rem;
-    background: black;
-    color: white;
+    background: #353B3C;
+    color: #EEF0F2;
   }
  
 .send {
     background: #EEF0F2;
-    border-radius: 15%;
-    border: none;
+    cursor: pointer;
     height: 1.7rem;
     width: 5rem;
+    border-radius: 25%;
     position: absolute;
     margin-top: .1rem;
     margin-right: 1rem;
     right: .5rem;
-    cursor: pointer;
   }

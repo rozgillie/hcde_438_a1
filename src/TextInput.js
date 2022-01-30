@@ -1,4 +1,3 @@
-
 import "./TextInput.css";
 import { useState } from "react";
 
@@ -23,9 +22,11 @@ function TextInput(props) {
         onChange={(e) => setText(e.target.value)}
         onKeyPress={onKeyPress}
       />
+
       <button className="send" onClick={send}>
         Send
       </button>
+      
     </footer>
   );
 }

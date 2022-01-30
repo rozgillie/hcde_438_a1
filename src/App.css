@@ -49,18 +49,16 @@
   background: #353B3C;
   color: white;
 }
-.messages {
+.text {
   display: flex;
   flex-direction: column-reverse;
   align-items: flex-start;
   overflow: auto;
-  max-height: calc(100vh - 4rem - 4rem);
-  min-height: calc(100vh - 4rem - 4rem);
   padding: 1rem;
 }
 .message {
-  color: white;
-  background: black;
+  color: #EEF0F2;
+  background:#353B3C;
   padding: 0.5rem 1rem;
   margin: 0.2rem;
   border-radius: 0.3rem;
