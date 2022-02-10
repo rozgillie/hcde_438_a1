@@ -62,8 +62,31 @@
   padding: 0.5rem 1rem;
   margin: 0.2rem;
   border-radius: 0.3rem;
+  overflow-wrap: break-word;
 }
 
 .text-input>input {
   width:calc(100%-50px);
+}
+
+.message-user {
+  position: absolute;
+  left: 0;
+  top: -0.8rem;
+  font-size: 0.5rem;
+}
+
+.name-picker {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+.name-picker svg {
+  stroke: white;
+  cursor: pointer;
+}
+.name-picker-name {
+  color: white;
+  margin-right: 0.5rem;
+  font-size: 0.8rem;
 }

@@ -2,10 +2,13 @@ import { useState } from 'react';
 import './App.css';
 import TextInput from "./TextInput";
 import Camera from "react-snap-pic";
+import NamePicker from "./NamePicker";
+
 
 function App() {
   const [text, setText] = useState([]);
   const[showCamera, setShowCamera] = useState(false);
+  let [username, setUsername] = useState("");
   function sendMsg(msg){
     console.log(msg)
     setText([msg, ...text])
@@ -20,6 +23,7 @@ function App() {
       <header className="header">
         <div className="logo"/>
         <span className="title">ChatApp</span>
+        <NamePicker setUsername={setUsername} />
       </header>
       <footer>
         <div className="text"> 
