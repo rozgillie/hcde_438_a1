@@ -6,13 +6,17 @@ import NamePicker from "./NamePicker";
 
 
 function App() {
-  const [text, setText] = useState([]);
-  const[showCamera, setShowCamera] = useState(false);
-  let [username, setUsername] = useState("");
+  const [text, setText] = useState([]); //sets text to empty
+  const[showCamera, setShowCamera] = useState(false); //initializes camera to off
+  let [username, setUsername] = useState(""); //set username to empty
+
+  //adds message to array and console.logs msg
   function sendMsg(msg){
     console.log(msg)
     setText([msg, ...text])
     }
+
+  //clears camera and console.logs image
   function takePicture(img){
     console.log(img);
     setShowCamera(false);
@@ -22,7 +26,7 @@ function App() {
     <div className="App">
       <header className="header">
         <div className="logo"/>
-        <span className="title">ChatApp</span>
+        <span className="title">ChatApp</span> 
         <NamePicker setUsername={setUsername} />
       </header>
       <footer>

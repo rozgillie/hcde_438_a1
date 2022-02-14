@@ -4,12 +4,15 @@ import { FiCamera } from 'react-icons/fi';
 
 
 function TextInput(props) {
-  const [text, setText] = useState("");
+  const [text, setText] = useState(""); //sets text to empty
 
+  //resets test to be blank after message is sent
   function send() {
     props.sendMessage(text);
     setText("");
   }
+
+  // allow user to press enter to input data
   function onKeyPress(e) {
     if (e.key === "Enter") {
       send();
